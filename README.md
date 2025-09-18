@@ -2,23 +2,33 @@
 
 키워드를 입력하면 네이버 뉴스를 크롤링해서 상위 3개의 뉴스를 반환하는 FastAPI 백엔드 서비스입니다.
 
-## 설치 방법
+## 빠른 시작
 
-1. 패키지 설치:
+### 1. 자동 설치 및 실행 (권장)
+
 ```bash
+# 설치
+./setup.sh
+
+# 실행
+./run.sh
+```
+
+### 2. 수동 설치 및 실행
+
+```bash
+# 1. 가상환경 생성
+python3 -m venv venv
+
+# 2. 가상환경 활성화
+source venv/bin/activate
+
+# 3. 패키지 설치
+pip install --upgrade pip
 pip install -r requirements.txt
-```
 
-## 실행 방법
-
-```bash
+# 4. 서비스 실행
 python main.py
-```
-
-또는
-
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
 ## API 사용법
